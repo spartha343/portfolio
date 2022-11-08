@@ -172,6 +172,11 @@
                 </div>
                 <div class='flex-grow-1 mx-2'>
                     <form action="https://formsubmit.co/spartha343@gmail.com" method="POST">
+                        <!-- honeypot -->
+                        <input type="text" name="_honey" class="d-none">
+                        <!-- Disbale captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+
                         <input type="text" name="Name" placeholder='Your Name' required />
                         <input type="email" name="Email" placeholder='Your Email: example@email.com' required /> <br />
                         <textarea name="Message" rows="8" placeholder='Your Message' required></textarea>

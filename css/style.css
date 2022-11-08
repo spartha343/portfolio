@@ -151,6 +151,37 @@ textarea {
     background-color: whitesmoke;
 }
 
+#status {
+    text-align: center;
+}
+
+#status.success {
+    background-color: rgba(0, 128, 0, 0.377);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgba(255, 0, 0, 0.493);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 /* ----------------- Footer styles ------------------ */
 footer {
     background: linear-gradient(to right, var(--color1), teal);

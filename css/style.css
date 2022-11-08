@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color1: rgb(74, 170, 201);
+}
+
+.color1 {
+    color: var(--color1);
+    /* background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.bg-color1 {
+    background-color: var(--color1);
+}
+
+
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+
+/* ----------- Flexbox width styles ------------- */
+.same-width-child>* {
+    flex: 1;
+}
+
+/* --------------- Button styles ---------------- */
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color1);
+    padding: 5px 8px;
+    border: none;
+    border-radius: 7px;
+}
+
+/* -------- Navbar and offcanvas styles ---------- */
+.navbar {
+    border-radius: 0 0 15px 15px;
+}
+
+.myNav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.offcanvas-body li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(74, 170, 201);
+}
+
+.myNav li a,
+.offcanvas-body a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------- Section styles ---------------- */
+section {
+    padding: 10% 0 1% 0;
+}
+
+/* -------------- Progress bar styles -------------- */
+.progress {
+    height: 9px;
+}
+
+/* --------------- Tag Cloud Styles ---------------- */
+.tagcloud {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tagcloud--item {
+    color: var(--color1);
+    text-shadow: 2px 2px 3px var(--color1);
+}
+
+/* ----------------- Table Styles ------------------ */
+table td {
+    padding: 9px 20px 9px 0px;
+}
+
+
+/* ----------------- Contact styles ----------------- */
+.contact {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+i {
+    color: #1480d8;
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.my-icon {
+    font-size: 1.6em;
+    margin-right: 15px;
+}
+
+.my-icon:hover {
+    color: #01569b;
+}
+
+/* ------------------- Form styles ------------------ */
+input[type='email'],
+input[type='text'],
+textarea {
+    width: 100%;
+}
+
+input[type='email'],
+input[type='text'],
+textarea {
+    border: none;
+    border-radius: 10px;
+    font-size: .9em;
+    margin: 0.5rem 0;
+    padding: 0.6em;
+    background-color: whitesmoke;
+}
+
+/* ----------------- Footer styles ------------------ */
+footer {
+    background: linear-gradient(to right, var(--color1), teal);
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 13px;
+    padding: 50px 20px 10px;
+    border-radius: 30px 30px 0 0;
+}
+
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+/* ------------------ media queries ------------------- */
+@media only screen and (max-width:768px) {
+    section {
+        padding: 10% 0 14% 0;
+    }
+
+    .responsive {
+        flex-direction: column !important;
+    }
+}

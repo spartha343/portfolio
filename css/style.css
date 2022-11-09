@@ -26,7 +26,7 @@ body {
     margin: auto;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -34,7 +34,7 @@ h5,
 h6,
 td {
     font-weight: bold;
-}
+} */
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -55,6 +55,29 @@ p {
     padding: 5px 8px;
     border: none;
     border-radius: 7px;
+}
+
+/* ---------------- Image styles ----------------- */
+div {
+    overflow: hidden;
+}
+
+img {
+    animation: imageResizer 5s infinite;
+}
+
+@keyframes imageResizer {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* -------- Navbar and offcanvas styles ---------- */

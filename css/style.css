@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --color1: rgb(74, 170, 201);
+    --color1: rgb(0, 135, 180);
 }
 
 .color1 {
@@ -26,16 +26,6 @@ body {
     margin: auto;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-td {
-    font-weight: bold;
-} */
-
 p {
     font-family: 'Poppins', sans-serif;
     text-align: justify;
@@ -58,25 +48,21 @@ p {
 }
 
 /* ---------------- Image styles ----------------- */
-div {
+section div {
     overflow: hidden;
 }
 
 img {
-    animation: imageResizer 5s infinite;
+    animation: imageResizer 2.5s infinite alternate ease-in-out;
 }
 
 @keyframes imageResizer {
-    0% {
+    from {
         transform: scale(1);
     }
 
-    50% {
+    to {
         transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
     }
 }
 
@@ -89,7 +75,6 @@ img {
     list-style-type: none;
     display: inline-block;
     margin-right: 10px;
-    display: inline-block;
 }
 
 .offcanvas-body li {
@@ -143,17 +128,18 @@ table td {
 
 i {
     color: #1480d8;
-    display: inline-block;
-    padding-right: 7px;
+    margin-right: 7px;
 }
 
 .my-icon {
     font-size: 1.6em;
     margin-right: 15px;
+    transition: 0.5s;
 }
 
 .my-icon:hover {
     color: #01569b;
+    transform: translateY(-7px);
 }
 
 /* ------------------- Form styles ------------------ */
@@ -209,9 +195,24 @@ textarea {
 footer {
     background: linear-gradient(to right, var(--color1), teal);
     color: rgba(255, 255, 255, 0.808);
-    font-size: 13px;
-    padding: 50px 20px 10px;
-    border-radius: 30px 30px 0 0;
+    font-size: 14px;
+    padding: 30px 20px 10px;
+}
+
+footer {
+    background-image: url('../images/underwater.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .my-icon,
+footer .myNav a {
+    color: rgba(255, 255, 255, 0.555);
+}
+
+footer .my-icon:hover,
+footer .myNav a:hover {
+    color: white;
 }
 
 hr {

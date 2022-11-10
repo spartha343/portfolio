@@ -62,7 +62,7 @@ img {
     }
 
     to {
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
 }
 
@@ -229,5 +229,30 @@ hr {
 
     .responsive {
         flex-direction: column !important;
+    }
+
+    .responsive>div {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .lines::after,
+    .lines::before {
+        content: '';
+        background-color: var(--color1);
+        width: 25px;
+        height: 2px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .lines::after {
+        margin-left: .6em;
+    }
+
+    .lines::before {
+        margin-right: .7em;
     }
 }

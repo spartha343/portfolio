@@ -22,7 +22,7 @@
 }
 
 body {
-    max-width: 1920px;
+    max-width: 1366px;
     margin: auto;
 }
 
@@ -197,12 +197,6 @@ footer {
     color: rgba(255, 255, 255, 0.808);
     font-size: 14px;
     padding: 30px 20px 10px;
-}
-
-footer {
-    background-image: url('../images/underwater.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 footer .my-icon,
